@@ -1,6 +1,6 @@
 const config = require('./config');
 const express = require('express')
-const JsonDB = require('node-json-db');
+import JsonDB from 'node-json-db';
 import { Config } from 'node-json-db/lib/JsonDBConfig';
 const app = express()
 const port = 3000
