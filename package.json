@@ -7,10 +7,13 @@
   "license": "AGPL-3.0-or-later",
   "private": false,
   "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "express": "^4.17.0",
     "node-json-db": "^0.11.0"
   },
   "scripts": {
-    "start": "node --experimental-modules index.js"
+    "start": "babel-node index.js"
   }
 }
