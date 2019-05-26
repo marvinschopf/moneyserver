@@ -5,6 +5,8 @@ import { Config } from 'node-json-db/lib/JsonDBConfig';
 const app = express()
 const port = 3000
 
+const db = new JsonDB(new Config("database", true, false, '/');
+
 app.set('json spaces', 40);
 
 app.get('/', (req, res) => res.send('Hello World!'))
