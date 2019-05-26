@@ -13,6 +13,7 @@ app.set('json spaces', 40);
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.all('/api/v1/get-balance', (req, res) => {
+	db.reload();
 	config.keys.forEach((val) => {
 		if(val.key == req.query.key) {
 			res.json({"response": "success"});
